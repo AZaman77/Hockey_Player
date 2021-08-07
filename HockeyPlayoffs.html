@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="shortcut icon" href="https://seeklogo.com/images/H/hockey-stick-logo-54FB34CE31-seeklogo.com.png">
+  <meta charset="utf-8">
+  <title>Hockey games</title>
+  <link rel="stylesheet" href="HockeyPlayoffs.css">
+</head>
+
+<body>
+  <p id="score1"></p>
+  <p id="score2"></p>
+<script>
+    var string1 = Math.floor(Math.random() * 9);
+    var string2 = Math.floor(Math.random() * 9);
+    document.getElementById("score1").innerHTML = string1;
+    document.getElementById("score2").innerHTML = string2;
+    if (string1 == string2) {
+      var string1 = Math.floor(Math.random() * 9);
+      var string2 = Math.floor(Math.random() * 9);
+    }
+    else if (string2 > string1) {
+      alert("Loss");
+    }
+    else if (string1 > string2) {
+      alert("Win");
+    }
+  </script>
+</body>
+
+</html>
